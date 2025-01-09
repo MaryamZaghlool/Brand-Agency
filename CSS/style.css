@@ -72,6 +72,7 @@ main .top {
     display: flex;
     justify-content: space-between;
     font-size: 30px;
+    flex-wrap: wrap;
 }
 
 main .top span {
@@ -161,6 +162,42 @@ main .fa-bars {
     cursor: pointer;
 }
 
+@media (max-width:1300px) {
+    .container {
+        margin:auto 100px;
+    }
+    
+}
+
+@media (max-width: 860px) {
+    .container {
+        margin: 30px 50px;
+    }
+
+
+    main .bottom h1 {
+        font-size: 70px;
+    }
+
+    main .bottom p {
+        font-size: 20px;
+    }
+
+    main .bottom .p1 {
+        width: 100%;
+    }
+
+    main .bottom .p2 {
+        column-count: 2;
+        column-gap: 50px;
+    }
+
+    main .bottom .p2 .numbers {
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+}
+
 /**************************************section1*****************************/
 
 .section1 {
@@ -221,11 +258,52 @@ main .fa-bars {
     color: rgba(0, 0, 0, 0.692);
 }
 
+@media (max-width: 1300px) {
+
+    .section1 {
+        margin-top: 300px;
+    }
+
+    .section1.container {
+        margin: 100px;
+    }
+
+    .section1 .container img {
+        border-radius: 40px;
+        width:65%;
+    }
+
+    .section1 .container .sec1-p1 {
+        width: 33%;
+        font-size: 22px;
+    }
+
+    .section1 .container .sec1-p1 button {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .section1 {
+        margin-top: -180px;
+    }
+    .section1 .container img {
+        width:60%;
+    }
+
+    .section1 .container .sec1-p1 {
+        width: 35%;
+        font-size: 24px;
+    }
+}
+
 /**************************************section2*****************************/
 
 .section2 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 60vh;
     margin-top: 100px;
     font-family: "Mukta", serif;
@@ -259,6 +337,30 @@ main .fa-bars {
 
 .section2 .container .sec2-div3 .div3-p2 {
     margin: 70px 0px;
+}
+
+@media (max-width: 1300px) {
+
+    .section2 .container {
+        margin: 80px 100px;
+    }
+
+    .section2 .container .sec2-div3 .div3-p2 {
+        margin: 70px 0px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .section2 .container div {
+        width: 45%;
+    }
+
+    .section2 .container .sec2-div1 {
+        width: 100%;
+        font-size: 50px;
+        margin-bottom: 70px;
+    }
 }
 
 /**************************************section3*****************************/
@@ -315,6 +417,46 @@ main .fa-bars {
     margin-right: 7px;
 }
 
+@media (max-width: 1300px) {
+    .section3 img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 860px) {
+    .section3 {
+        width: 100%;
+        padding: 50px 0px 0px 60px;
+    }
+
+    .section3 img {
+        width: 50%;
+        height: 620px;
+    }
+
+    .section3 .sec3-div1 {
+        margin-top: 15px;
+        width: 45%;
+    }
+
+    .section3 .sec3-div1 h2 {
+        font-size: 45px;
+    }
+
+    .section3 .sec3-div1 .sec3-p1 {
+        font-size: 24px;
+    }
+
+    .section3 .sec3-div1 .sec3-p2 {
+        font-size: 22px;
+    }
+
+    .section3 .sec3-div1 .sec3-div2 {
+        width: 350px;
+        text-align: left;
+    }
+}
+
 /**************************************section4*****************************/
 
 .section4 {
@@ -341,11 +483,37 @@ main .fa-bars {
     width: 90px;
 }
 
+@media (max-width: 1300px) {
+    
+    .section4 .container{
+        margin: 100px;
+    }
+
+}
+
+@media (max-width: 860px) {
+    .section4 {
+        margin-top: -50px;
+        width: 100%;
+    }
+    .section4 .container {
+        padding: 30px 0px;
+        flex-wrap: wrap;
+        margin: 50px;
+    }
+
+    .section4 .container div {
+        padding: 70px 135px;
+        margin: 20px 0px;
+    }
+}
+
 /**************************************section5*****************************/
 
 .section5 {
     margin-top: -30px;
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
 
 }
@@ -365,6 +533,14 @@ main .fa-bars {
 .section5 img:hover {
     height: 103%;
     width: 105%;
+}
+
+@media (max-width: 860px) {
+
+    .section5 div {
+        width: 50%;
+        height: 500px;
+    }
 }
 
 /**************************************section6*****************************/
@@ -410,6 +586,24 @@ main .fa-bars {
 
 .section6 button:hover {
     background-color: #c9a61d;
+}
+
+@media (max-width: 860px) {
+    .section6 {
+        width: 100%;
+    }
+
+    .section6 .container {
+        margin: 60px 40px 80px;
+    }
+
+    .section6 .sec6-p1 {
+        font-size: 35px;
+    }
+
+    .section6 .sec6-p2 {
+        font-size: 21px;
+    }
 }
 
 /**************************************section7*****************************/
@@ -469,6 +663,28 @@ main .fa-bars {
 .section7 .email {
     font-size: 20px;
     font-weight: bold;
+}
+@media (max-width: 1300px) {
+
+    .section7 .containeer {
+        margin: 30px 50px;
+    }
+
+    .section7 div {
+        width: 47%;
+        height: 400px;
+    }
+}
+@media (max-width: 860px) {
+
+    .section7 .containeer {
+        margin: 30px 50px;
+    }
+
+    .section7 div {
+        width: 45%;
+        height: 450px;
+    }
 }
 
 /**************************************footer*****************************/
